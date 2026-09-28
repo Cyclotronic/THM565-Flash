@@ -10,3 +10,7 @@ venv/
 *.log
 captures/
 *.cal
+
+# Staging instructions for whoever finishes publishing this repo - not
+# part of the published content, references private paths.
+HANDOVER.md
