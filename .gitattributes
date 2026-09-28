@@ -1,0 +1,12 @@
+# Line-ending policy: LF in the repo, LF in the working tree, everywhere.
+# This share is edited from both Windows and macOS - without this, core.autocrlf
+# differences between machines turn every checkout into a whole-file diff.
+
+* text=auto eol=lf
+
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.toml  text eol=lf
+*.cfg   text eol=lf

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Real captured session data (serial logs, cal backups) - these are bench
+# artifacts, not source, and may contain a specific instrument's identity/
+# calibration data. Keep them local, not in git.
+*.log
+captures/
+*.cal
