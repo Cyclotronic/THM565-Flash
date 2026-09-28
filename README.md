@@ -16,8 +16,8 @@ instrument's Z180 board that reproduces those real captures byte-for-byte.
 The full writeups - including exactly what's confirmed from real data,
 confirmed by emulation, or still only inferred from disassembly - live in
 the private `THM500/` reference folder alongside the original vendor files
-(not duplicated into this repo, to avoid drift): `PROTOCOL.md` (the PC-side
-protocol), `FIRMWARE-SERIAL-FLASH.md` (the instrument's firmware, static
+(now adapted for publication): `PROTOCOL.md` (the PC-side
+protocol), `docs/FIRMWARE-NOTES.md` (the instrument's firmware, static
 analysis), and `FIRMWARE-EMULATION.md` (the emulator build and the
 differential tests against QLOADER this tool's correctness rests on).
 
@@ -72,7 +72,7 @@ exact instrument went through that path before it was upgraded to 2.0.
   firmware that has already been reflashed, VPP off during `$BURN CONFIG`/
   `$BURN CAL` fails cleanly (the earlier "corrupted THM??? model name"
   incident on this project's instrument was a clean write-once-slot
-  rejection, not a garbled write - see `FIRMWARE-SERIAL-FLASH.md`) - but the
+  rejection, not a garbled write - see `docs/FIRMWARE-NOTES.md`) - but the
   config slot can then never be programmed again without a flash erase, and
   2.0 firmware has no way to erase itself.
 
@@ -119,5 +119,5 @@ The instrument supports a much larger serial command set than this tool
 uses (scope/DMM measurement and configuration, clock/date, backlight, key
 lock and injection, screen/setting/waveform upload-download, print) - the
 full 60-command table this tool's own subset was found inside is documented
-in `FIRMWARE-SERIAL-FLASH.md` in the private reference folder, not here,
+in `docs/FIRMWARE-NOTES.md` in docs/FIRMWARE-NOTES.md,
 since this package only implements the firmware/config/cal subset.
