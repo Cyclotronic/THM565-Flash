@@ -76,6 +76,16 @@ exact instrument went through that path before it was upgraded to 2.0.
   config slot can then never be programmed again without a flash erase, and
   2.0 firmware has no way to erase itself.
 
+## Hardware and community resources
+
+Plans and a bill of materials for the THM565 itself, and for the
+067-1446-99 test fixture this repo's flashing and calibration commands
+depend on, were shared on EEVblog by user TERRA Operative:
+<https://www.eevblog.com/forum/testgear/tektronix-thm56x-portable-scope-hackteardowndiscussion/msg6265840/#msg6265840>
+
+None of the flashing or testing behind this repo would have been possible
+without that fixture. Thanks to TERRA Operative for posting it.
+
 ## Tools
 
 - `thm565tools/flash.py` - firmware reload, config burn, cal load/burn.
